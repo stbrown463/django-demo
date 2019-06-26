@@ -1,8 +1,12 @@
-<h2>Songs <a href="">(+)</a></h2>
-<ul>
-	{% for song in songs %}
-		<li>
-			<a href="">{{ song.artist }} - {{ song.title }} ({{ song.album }})</a>
-		</li>
-	{% endfor %}
-</ul>
+{% extends 'tunr/base.html' %}
+
+{% block content %}
+	<h2>Songs <a href="">(+)</a></h2>
+	<ul>
+		{% for song in songs %}
+			<li>
+				<a href="">{{ song.artist }} - {{ song.title }} ({{ song.album }})</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

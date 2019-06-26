@@ -1,4 +1,8 @@
-<h2>{{ song.artist }} - {{ song.title }}</h2>
-<h3>({{ song.album }})</h3>
+{% extends 'tunr/base.html' %}
 
-<img src="{{ song.preview_url }}" alt="" class="song-preview">
+{% block content %}
+	<h2>{{ song.artist }} - {{ song.title }}</h2>
+	<h3>({{ song.album }})</h3>
+
+	<img src="{{ song.preview_url }}" alt="" class="song-preview">
+{% endblock %}
